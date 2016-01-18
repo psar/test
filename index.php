@@ -19,19 +19,6 @@
     <body>
         
         <?php
-        
-        function check_stock ($ordered, $stock) {
-            
-            if ($ordered > $stock) {
-                echo 'Вызаказали '.$ordered.', на складе имеется только '.$stock;
-            } else {
-                $quantity = $ordered;
-            }
-            return $quantity;
-        };
-
-        
-        
         $product1= array (
         "name" => 'игрушка мягкая мишка белый',
         "price" => mt_rand(1, 10),
